@@ -19,3 +19,23 @@
 // 		$('body').append("<ul><li>item1</li><li>item2</li><li>item3</li></ul>");
 // 	});
 // });
+
+$(document).ready(function(){
+	$('p').hover(function (){
+		$(this).css("color", "pink");
+	}, function(){
+		$(this).css("color", "#80809A");
+	});
+	$('h1, h2, h3').append("!");
+	$('a').click(function(){
+		var letsGo = confirm("Do you want to visit this link?");
+		if (letsGo) {
+
+		}
+		else {
+			$(this).remove();
+			return false;
+
+		}
+	})
+});

@@ -54,11 +54,10 @@
 $(document).ready(function() {
 
 	$('.button').click(function(){
-		$('body').append('<div class="lightbox-overlay"><div class="lightbox-content">
-			<h3>I\'m a Popup\!</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing 
-			elit. Necessitatibus, perferendis amet in! Odio cum numquam, officiis expedita 
-			ex architecto consectetur molestiae neque enim sed magnam sapiente doloremque 
-			earum asperiores veritatis!</p></div></div>');
+		$('body').append('<div class="lightbox-overlay"><div class="lightbox-content"><h3>I am a Popup, hooray&#33;</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, perferendis amet in! Odio cum numquam, officiis expedita ex architecto consectetur molestiae neque enim sed magnam sapiente doloremque earum asperiores veritatis!</p><div><a class="closeButton" href="#">Close</a></div></div></div>');
+		$('.closeButton').click(function(){
+			$('.lightbox-overlay').remove();
+		});
 	});
-
+	
 });
